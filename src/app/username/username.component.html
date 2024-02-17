@@ -1,0 +1,14 @@
+<h3 style="color: dodgerblue">Solution</h3>
+<div class="solution">
+    <label>Username</label>
+    <input type="text"
+        class="form-control"
+        [(ngModel)]="username">
+    
+    <p>Current Username: {{ username }}</p>
+
+    <button 
+        [disabled]="username.trim() === ''"
+        class="btn btn-primary"
+        (click)="username = ''">Reset</button>
+</div>
